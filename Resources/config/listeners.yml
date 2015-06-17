@@ -1,0 +1,14 @@
+parameters:
+    doctrine_cross_bundle_mapping.listener.doctrine_cross_bundle_mapping.class: Gheb\Bundle\DoctrineCrossBundleMappingBundle\EventListener\DoctrineCrossBundleMappingBundleListener
+    doctrine.orm.listeners.resolve_target_entity.class: Gheb\Bundle\DoctrineCrossBundleMappingBundle\EventListener\ResolveTargetEntityListener
+
+services:
+    doctrine_cross_bundle_mapping.listener.doctrine_cross_bundle_mapping:
+        class: "%doctrine_cross_bundle_mapping.listener.doctrine_cross_bundle_mapping.class%"
+        public: false
+        arguments:
+            - "@knp.doctrine_behaviors.reflection.class_analyzer"
+            - "@service_container"
+        tags:
+            - { name: doctrine.event_listener, event: loadClassMetadata }
+
