@@ -160,7 +160,7 @@ $object->setBooleanAttribute(true);
 var_dump($object->getBooleanAttribute()); // true
 var_dump($object->isBooleanAttribute()); // true
 
-$object->setBooleanAttribute('test);
+$object->setBooleanAttribute('test');
 var_dump($object->getBooleanAttribute()); // test
 var_dump($object->isBooleanAttribute()); // false
 
