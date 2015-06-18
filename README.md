@@ -7,6 +7,8 @@ This bundle is a solution to cross bundle association mapping.
 This bundle brings you a way to associate two entities that belong
 to two different bundles without breaking the decoupling and still run them independently.
 
+[![Build Status](https://travis-ci.org/GregoireHebert/doctrine-cross-bundle-mapping-bundle.svg?branch=master)](https://travis-ci.org/GregoireHebert/doctrine-cross-bundle-mapping-bundle)
+
 ----------
 
 ### Use case
