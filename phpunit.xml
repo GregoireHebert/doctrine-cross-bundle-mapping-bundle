@@ -13,24 +13,24 @@
         bootstrap="vendor/autoload.php">
 
     <testsuites>
-        <testsuite name="ReflexeBridgeBundle Test Suite">
-            <directory>./src/*/Bundle/*Bundle/Tests</directory>
+        <testsuite name="DoctrineCrossBundleMapping Test Suite">
+            <directory>./Tests</directory>
         </testsuite>
     </testsuites>
 
     <logging>
-        <log type="coverage-html" target="build/coverage" title="ReflexeSecurityBundle" charset="UTF-8" yui="true"
-             highlight="true" lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-html" target="build/coverage" title="DoctrineCrossBundleMapping" charset="UTF-8" yui="true"
+             highlight="true" lowUpperBound="35" highLowerBound="65"/>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
         <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
     </logging>
 
     <filter>
         <whitelist>
-            <directory>./src</directory>
+            <directory>./</directory>
             <exclude>
-                <directory>./src/*/Bundle/*Bundle/Resources</directory>
-                <directory>./src/*/Bundle/*Bundle/Tests</directory>
+                <directory>./Resources</directory>
+                <directory>./Tests</directory>
             </exclude>
         </whitelist>
     </filter>
